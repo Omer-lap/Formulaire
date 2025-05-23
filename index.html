@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Formulaire</title>
+</head>
+<body>
+  <form action="traitement.php" method="post">
+    <div class="ligne">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" required>
+    </div>
+    <div class="ligne">
+    <label for="prenom">Prenom:</label>
+    <input type="prenom" id="prenom" name="prenom" required>
+    </div>
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" required>
+    <div class="ligne">
+      <label for="genre" >Genre:</label>
+      <input type="radio" id="homme" name="genre" value="homme"required>
+      <label for="homme">Homme</label>
+      <input type="radio" id="femme" name="genre" value="femme">
+      <label for="femme">Femme:</label>
+    </div>
+    <div class="ligne">
+    <label for"specialite">Specialite:</label>
+    <select id="choix" name="choix"required>
+      <option value="option1">mathematique</option>
+      <option value="option2">informatique</option>
+      <option value="option3">physique</option>
+    </select>
+  </div>
+    <div class="ligne">
+    <label for="message">message:</label>
+    <textarea id="message" name="message" rows="4" cols="50"required></textarea>
+    </div>
+    <div class="ligne">
+      <button type="submit">envoyer</button>
+      <button type="reset">annuler</button>
+    </div>
+  </form>
+</body>
+</html>
